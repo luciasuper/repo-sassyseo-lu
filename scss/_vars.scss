@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;1,300&display=swap');
+
+
+//variables globales
+
+*{
+    font-family: 'Raleway', sans-serif;
+    color:#b89790 ;
+    padding: 0;
+    margin: 0;
+}
+
+.bg-fae8e3{
+    background-color: rgba(250, 232, 227, .8) ;
+}
+
+body{
+    background-image: url(../imgs/backgroundimage.png);    
+    animation-name: opacity;    
+	animation-duration: 2s;
+    width: 100vw;
+    overflow-x: hidden;
+
+}
+//h1 y h3
+h1{
+    text-align: center;
+}
+
+h3{
+    font-style: italic;
+}
+
+//fonts
+$onefont:'Raleway', sans-serif;
+
+
+//colores
+$onecolor:#B89790;
+$twocolor:#60ab90;
+
+//animacion
+
+@keyframes opacity{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+//align:
+$alicenter:center;
+
+//justify
+$space-e:space-evenly;
+
+
+//extend 
+.color{
+    color: $onecolor;
+    text-align: $alicenter;
+}
+
+//@mixin d-flex 
+@mixin d-flex($justify-se,$align){
+    display: flex;
+    justify-content: $justify-se;
+    align-items:$align;
+    text-align: $align;
+}
+
+//maps 
+$mix:(
+    "ln-thr":line-through,
+    "rojo":red,
+    "puntero":pointer,
+    );

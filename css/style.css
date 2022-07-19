@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;1,300&display=swap");
+* {
+  font-family: 'Raleway', sans-serif;
+  color: #b89790;
+  padding: 0;
+  margin: 0; }
+
+.bg-fae8e3 {
+  background-color: rgba(250, 232, 227, 0.8); }
+
+body {
+  background-image: url(../imgs/backgroundimage.png);
+  animation-name: opacity;
+  animation-duration: 2s;
+  width: 100vw;
+  overflow-x: hidden; }
+
+h1 {
+  text-align: center; }
+
+h3 {
+  font-style: italic; }
+
+@keyframes opacity {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.color, .info__contacto {
+  color: #B89790;
+  text-align: center; }
+
+nav div ul li a {
+  color: #B89790 !important; }
+  nav div ul li a:hover {
+    cursor: pointer;
+    color: #60ab90 !important;
+    font-weight: 600; }
+
+.scale-logo:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  transition: 0.5s; }
+
+.envio__pago {
+  margin: 10px 70px 10px 70px;
+  padding: 50px 30px;
+  border: 2px #B89790 dotted;
+  text-align: center; }
+
+#aside {
+  text-align: center;
+  justify-content: center; }
+  @media (max-width: 992px) {
+    #aside #aside {
+      margin-top: 30px; } }
+  @media (max-width: 992px) {
+    #aside .mapa {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      text-align: center;
+      width: 100vw !important;
+      margin-bottom: 50px;
+      margin-top: 10px; } }
+
+.scale-producto:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: 0.3s; }
+
+.galeria {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  .galeria .text-align-center {
+    text-align: center; }
+    .galeria .text-align-center .incorrecto {
+      text-decoration: line-through;
+      font-size: 1.5rem;
+      color: red; }
+
+.nosotros__articulo {
+  width: 60%;
+  margin: 50px auto;
+  padding: 50px 30px;
+  border: 2px #B89790 dotted;
+  background-color: rgba(157, 250, 217, 0.3);
+  text-align: center;
+  color: #B89790; }
+
+.info__contacto {
+  font-size: 1.5rem;
+  border: #B89790 dotted 2px;
+  background-color: rgba(157, 250, 217, 0.3);
+  margin: 50px auto;
+  padding: 50px 30px; }
+
+footer {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  border: 2px #B89790 solid;
+  background-color: #fae8e3; }

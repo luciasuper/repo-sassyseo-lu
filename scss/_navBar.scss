@@ -1,0 +1,15 @@
+//navBar
+
+nav div ul li a{
+    color: $onecolor !important;
+    &:hover{
+    	cursor: pointer;
+   		color: $twocolor !important;
+    	font-weight: 600;
+    } 
+}
+.scale-logo:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: 0.5s;
+}   

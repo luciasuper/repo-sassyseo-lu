@@ -1,0 +1,74 @@
+//content
+
+//INDEX
+
+.envio__pago{
+    margin: 10px 70px 10px 70px;
+    padding: 50px 30px;
+    border:2px $onecolor dotted;
+    text-align: $alicenter;
+}
+
+#aside{
+    text-align: $alicenter;
+    justify-content: $alicenter;
+    @media (max-width:992px){
+        #aside{
+            margin-top: 30px;   
+        }    
+    }
+    @media (max-width: 992px){
+       .mapa{
+            @include d-flex($space-e,$alicenter);
+            width: 100vw !important;
+            margin-bottom: 50px;
+            margin-top: 10px;      
+        }   
+    } 
+} 
+
+//PRODUCTOS
+
+.scale-producto:hover{
+    transform: scale(1.1);
+    cursor:  map-get($map:$mix, $key:"puntero");
+    transition:0.3s ;
+}
+
+.galeria {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $space-e;
+    .text-align-center{
+        text-align: $alicenter;    
+        .incorrecto{
+            text-decoration: map-get($map:$mix, $key:"ln-thr");
+            font-size: 1.5rem;
+            color: map-get($map:$mix, $key:"rojo");        
+        }
+    }   
+}
+
+//QUIENES SOMOS
+
+.nosotros__articulo{
+    width: 60%; 
+    margin: 50px auto;
+    padding: 50px 30px;
+    border:2px $onecolor dotted;
+    background-color:rgba(157, 250, 217, .3);
+    text-align: $alicenter;
+    color:$onecolor
+}
+
+//CONTACTO
+
+.info__contacto{
+    @extend .color;
+    font-size: 1.5rem;
+    border: $onecolor dotted 2px;
+    background-color:rgba(157, 250, 217, .3);
+    margin: 50px auto;
+    padding: 50px 30px;
+}

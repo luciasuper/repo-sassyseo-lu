@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;1,300&display=swap');
+/*reset*/
+*{
+    font-family: 'Raleway', sans-serif;
+    color:#b89790 ;
+    padding: 0;
+    margin: 0;
+
+}
+
+.bg-fae8e3{
+    background-color: rgba(250, 232, 227, .8) ;
+}
+
+
+
+
+body{
+    background-image: url(../imgs/backgroundimage.png);    
+    animation-name: opacity;    
+	animation-duration: 2s;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+@keyframes opacity{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+h1{
+    text-align: center;
+}
+
+h3{
+    font-style: italic;
+}
+
+nav div ul li a{
+    color: #b89790 !important;
+}
+
+nav div ul li a:hover{
+    cursor: pointer;
+    color: #60ab90 !important;
+    font-weight: 600;
+}
+
+.envio__pago{
+
+    margin: 10px 70px 10px 70px;
+    padding: 50px 30px;
+    border:2px #B89790 dotted;
+    text-align: center;
+} 
+
+.donde_nos_encontras{
+    text-align: center; 
+    margin: 50px auto;
+    align-items: center;
+    margin-bottom: 200px;    
+}
+
+#aside{
+    text-align: center;
+    justify-content: center;
+}
+
+@media (max-width:992px){
+    #aside{
+        margin-top: 30px;
+    }
+}
+
+
+footer{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    border: 2px #B89790 solid;
+    background-color: #fae8e3;
+}
+
+.incorrecto{
+    text-decoration: line-through;
+    font-size: 1.5rem;
+    color: red;
+}
+
+
+
+.scale-logo:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.galeria {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.text-align-center{
+    text-align: center;
+}
+
+.nosotros__articulo{
+    width: 60%; 
+    margin: 50px auto;
+    padding: 50px 30px;
+    border:2px #B89790 dotted;
+    background-color:rgb(157, 250, 217, .3);
+    text-align: center;
+    color:#B89790
+}
+
+.info__contacto{
+    font-size: 1.5rem;
+    text-align: center;
+    color: #B89790;
+    border: #B89790 dotted 2px;
+    background-color:rgb(157, 250, 217, .3);
+    margin: 50px auto;
+    padding: 50px 30px;
+}
+.mapa{
+    margin: auto;
+}
+
+@media (max-width: 992px){
+    .mapa{
+        display: flex;
+        width: 100vw !important;
+        margin-bottom: 50px;
+        margin-top: 10px;
+        text-align: center;
+        justify-content: center;
+    }
+}
